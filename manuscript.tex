@@ -4,6 +4,9 @@
 \usepackage{caption}
 \usepackage{tabularx}
 \usepackage{geometry}
+\usepackage{float}  %设置图片浮动位置的宏包
+\usepackage{subfigure}  %插入多图时用子图显示的宏包
+
 
 \geometry{a4paper,scale=0.75}
 
@@ -30,7 +33,7 @@ YL-335B的自动生产线由五个基本单元组成，分别是供料单元、�
     \caption{YL-335B外观示意图}
 \end{figure} 
 
-\section{方案论证(设计理念)}
+\section{装配单元结构}
 \subsection{管形料仓}
 管形料仓用来存储装配用的金属、黑色和白色小圆柱零件。它由塑料圆管和中空底座构成。塑料圆管顶端放置加强金属环，以防止破损。工件竖直放入料仓的空心圆管内，由于二者之间有一定的间隙，使其能在重力作用下自由下落。 
 
@@ -76,13 +79,126 @@ PLC 驱动与竖直移动气缸相连的电磁换向阀动作，由竖直移动�
     \includegraphics[scale=0.8]{fig/2-4.jpg}
     \caption{装配台料斗}
 \end{figure} 
+\pagebreak
 
-\subsection{警示灯}
-本工作单元上安装有红、橙、绿三色警示灯，它是作为整个系统警示用的。警示灯有五根引出线，其中黄绿交叉线为”地线”；红色线：红色灯控制线；黄色线：橙色灯控制线、绿色线：绿色灯控制线；黑色线：信号灯公共控制线。接线如图2-5所示。
+\section{过程论述}
+\subsection{装配单元的结构}
+装配单元的功能是完成将该单元料仓内的黑色或白色小圆柱工件嵌入到放置在装配料斗的待装配工件中的装配过程。
+
+装配单元的结构组成包括：管形料仓，供料机构，回转物料台，机械手，待装配工件的定位机构，气动系统及其阀组，信号采集及其自动控制系统，以及用于电器连接的端子排组件，整条生产线状态指示的信号灯和用于其他机构安装的铝型材支架及底板，传感器安装支架等其它附件。其中，机械装配图如图3-1所示：
+
 \begin{figure}[htbp]
     \centering
-    \includegraphics[scale=0.8]{fig/2-5.jpg}
-    \caption{警示灯及其接线}
+    \includegraphics[scale=0.6]{fig/2-6.jpg}
+    \caption{装配单元机械装配图}
 \end{figure} 
+
+\subsection{装配单元的工作过程}
+\subsubsection{工作任务}
+1、装配单元各气缸的初始位置为：挡料气缸处于伸出状态，顶料气缸处于缩回状态，料仓上已经有足够的小圆柱零件；装配机械手的升降气缸处于提升状态，伸缩气缸处于缩回状态，气爪处于松开状态。 设备上电和气源接通后，若各气缸满足初始位置要求，且料仓上已经有足够的小圆柱零件；工件装配台上没有待装配工件。则“正常工作”指示灯 HL1 常亮，表示设备准备好。否则，该指示灯以 1Hz 频率闪烁。 
+
+2、若设备准备好，按下启动按钮，装配单元启动，“设备运行”指示灯 HL2 常亮。如果回转台上的左料盘内没有小圆柱零件，就执行下料操作；如果左料盘内有零件，而右料盘内没有零件，执行回转台回转操作。
+
+3、如果回转台上的右料盘内有小圆柱零件且装配台上有待装配工件，执行装配机械手抓取小圆柱零件，放入待装配工件中的操作。 
+
+4、完成装配任务后，装配机械手应返回初始位置，等待下一次装配。 
+
+5、若在运行过程中按下停止按钮，则供料机构应立即停止供料，在装配条件满足的情况下，装配单元在完成本次装配后停止工作。
+
+6、在运行中发生“零件不足”报警时，指示灯 HL3 以 1Hz 的频率闪烁，HL1和HL2灯常亮；在运行中发生“零件没有”报警时，指示灯 HL3 以亮 1 秒，灭0.5秒的方式闪烁，HL2熄灭，HL1常亮。 
+
+\subsubsection{PLC系统接线和I/O分配}
+装配单元装置侧的接线端口信号端子的分配如图3-2所示：
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[scale=0.8]{fig/信号端子.png}
+    \caption{装配单元装置侧的接线端口信号端子的分配}
+\end{figure} 
+
+装配单元的 I/O 点较多，选用三菱 FX3U-48M 主单元，共 24 点输入，24 点继电器输出。PLC 的 I/O 分配如图 3-3 所示。图 3-4 是 PLC 接线原理图。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[scale=0.6]{fig/PLCIO.png}
+    \caption{装配单元 PLC 的 I/O 信号表}
+\end{figure} 
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[scale=0.3]{fig/3-4.jpg}
+    \caption{装配单元PLC接线原理}
+\end{figure} 
+
+\subsubsection{调试与运行}
+1、调整气动部分，检查气路是否正确，气压是否合理，气缸的动作速度是否合理。 
+
+2、检查磁性开关的安装位置是否到位，磁性开关工作是否正常。 
+
+3、检查I/O接线是否正确。
+
+4、检查传感器安装是否合理，灵敏度是否合适，保证检测的可靠性。
+
+5、放入工件，运行程序看装配单元动作是否满足任务要求。
+
+装配单元工艺流程图如图3-5：
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[scale=0.9]{fig/工艺流程.jpg}
+    \caption{装配单元工艺流程图}
+\end{figure} 
+
+\subsection{装配单元PLC编程}
+装配单元梯形图如图3-6，3-7，3-8，3-9所示：
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[scale=0.9]{fig/PLC1.png}
+    \caption{装配单元梯形图1}
+\end{figure} 
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[scale=0.9]{fig/PLC2.png}
+    \caption{装配单元梯形图2}
+\end{figure} 
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[scale=0.9]{fig/PLC3.png}
+    \caption{装配单元梯形图3}
+\end{figure} 
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[scale=0.95]{fig/PLC4.png}
+    \caption{装配单元梯形图4}
+\end{figure} 
+\pagebreak
+
+\section{结果分析}
+设备上电，气源接通后，各气缸处于原始状态，如果物料台有工件，装配单元可以启动。装配单元启动，若右料盘有工件，夹爪伸出夹取芯件，夹爪缩回，水平气缸伸出，将芯件放至待装配工件中，完成一次装配。完成后各气缸回到原始状态。若左料盘有工件，料盘旋转，夹取完成一次装配。完成后各气缸回到原始状态。左右料盘均无物料进行下料，顶料杆伸出顶住芯件，挡料杆缩回，完成一次下料。旋转物料盘，夹取芯件放至工件台工件中。完成一次装配。完成后各气缸回到原始状态。结果如图4-1所示：
+
+\begin{figure}[h]
+	\centering  %图片全局居中
+	\subfigbottomskip=2pt %两行子图之间的行间距
+	\subfigcapskip=-5pt %设置子图与子标题之间的距离
+	\subfigure[fig1]{
+		\includegraphics[width=0.3\linewidth]{./fig/r1.jpg}}
+	\subfigure[fig2]{
+		\includegraphics[width=0.3\linewidth]{./fig/r2.jpg}}
+	\subfigure[fig3]{
+		\includegraphics[width=0.3\linewidth]{./fig/r3.jpg}}
+    \\
+	\subfigure[fig4]{
+		\includegraphics[width=0.3\linewidth]{./fig/r6.jpg}}
+    \subfigure[fig5]{
+        \includegraphics[width=0.3\linewidth]{./fig/r4.jpg}}
+    \subfigure[fig6]{
+		\includegraphics[width=0.3\linewidth]{./fig/r5.jpg}}
+	\caption{装配单元运行结果}
+\end{figure}
+
+\section{课程设计总结}
+从最初阅读任务书时的一窍不通，到最终完成这次课程设计，我从中学到了许多。这次课程设计让我对PLC有了新的认识，与团队的配合也让我学到了团队协作。这次课设让我受益良多。
 
 \end{document}

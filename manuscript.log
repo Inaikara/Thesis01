@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 23.1) (preloaded format=xelatex 2023.2.22)  2 MAR 2023 10:53
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 23.1) (preloaded format=xelatex 2023.2.22)  2 MAR 2023 11:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -268,83 +268,111 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 \Gm@layouthoffset=\dimen198
 \Gm@layoutvoffset=\dimen199
 \Gm@dimlist=\toks19
- (C:\Users\frhyu\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (manuscript.aux)
+ (C:\Users\frhyu\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\frhyu\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count294
+\float@exts=\toks20
+\float@box=\box57
+\@float@everytoks=\toks21
+\@floatcapt=\box58
+) (C:\Users\frhyu\AppData\Local\Programs\MiKTeX\tex/latex/subfigure\subfigure.sty
+Package: subfigure 2002/07/30 v2.1.4 subfigure package
+\subfigtopskip=\skip61
+\subfigcapskip=\skip62
+\subfigcaptopadj=\dimen256
+\subfigbottomskip=\skip63
+\subfigcapmargin=\dimen257
+\subfiglabelskip=\skip64
+\c@subfigure=\count295
+\c@lofdepth=\count296
+\c@subtable=\count297
+\c@lotdepth=\count298
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(C:\Users\frhyu\AppData\Local\Programs\MiKTeX\tex/latex/subfigure\subfigure.cfg)
+\subfig@top=\skip65
+\subfig@bottom=\skip66
+) (manuscript.aux)
 \openout1 = `manuscript.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
 
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 (fontspec)             this).
 
 \symlegacymaths=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 13.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 13.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 13.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 13.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 13.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 13.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 13.
-LaTeX Font Info:    Redeclaring math accent \check on input line 13.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 13.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 13.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 13.
-LaTeX Font Info:    Redeclaring math symbol \colon on input line 13.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 13.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 13.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 13.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 13.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 13.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 13.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 13.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 13.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 13.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 13.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 13.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 13.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 13.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 16.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 16.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 16.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 16.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 16.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 16.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 16.
+LaTeX Font Info:    Redeclaring math accent \check on input line 16.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 16.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 16.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 16.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 16.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 16.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 16.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 16.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 16.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 16.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 16.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 16.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 16.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 16.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 16.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 16.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 16.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 16.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 13.
+(Font)              `operators' in the math version `normal' on input line 16.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 13.
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 16.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 13.
+(Font)              `operators' in the math version `bold' on input line 16.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 13.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 16.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 13.
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 16.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 13.
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 16.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 13.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 16.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 13.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 16.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 13.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 16.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 13.
+(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 16.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 13.
+(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 16.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 13.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 16.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 13.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 16.
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: subfigure package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
 *geometry* driver: auto-detecting
@@ -408,16 +436,48 @@ File: fig/2-3.jpg Graphic file (type bmp)
  [4]
 File: fig/2-4.jpg Graphic file (type bmp)
 <fig/2-4.jpg>
-File: fig/2-5.jpg Graphic file (type bmp)
-<fig/2-5.jpg>
- [5] [6] (manuscript.aux) ) 
+ [5]
+File: fig/2-6.jpg Graphic file (type bmp)
+<fig/2-6.jpg>
+ [6]
+File: fig/信号端子.png Graphic file (type bmp)
+<fig/信号端子.png>
+File: fig/PLCIO.png Graphic file (type bmp)
+<fig/PLCIO.png>
+File: fig/3-4.jpg Graphic file (type bmp)
+<fig/3-4.jpg>
+ [7] [8]
+File: fig/工艺流程.jpg Graphic file (type bmp)
+<fig/工艺流程.jpg>
+File: fig/PLC1.png Graphic file (type bmp)
+<fig/PLC1.png>
+File: fig/PLC2.png Graphic file (type bmp)
+<fig/PLC2.png>
+File: fig/PLC3.png Graphic file (type bmp)
+<fig/PLC3.png>
+File: fig/PLC4.png Graphic file (type bmp)
+<fig/PLC4.png>
+ [9] [10] [11] [12] [13]
+File: ./fig/r1.jpg Graphic file (type bmp)
+<./fig/r1.jpg>
+File: ./fig/r2.jpg Graphic file (type bmp)
+<./fig/r2.jpg>
+File: ./fig/r3.jpg Graphic file (type bmp)
+<./fig/r3.jpg>
+File: ./fig/r6.jpg Graphic file (type bmp)
+<./fig/r6.jpg>
+File: ./fig/r4.jpg Graphic file (type bmp)
+<./fig/r4.jpg>
+File: ./fig/r5.jpg Graphic file (type bmp)
+<./fig/r5.jpg>
+ [14] (manuscript.aux) ) 
 Here is how much of TeX's memory you used:
- 8759 strings out of 411511
- 236421 string characters out of 5819115
+ 9117 strings out of 411511
+ 242496 string characters out of 5819115
  1859001 words of memory out of 5000000
- 28872 multiletter control sequences out of 15000+600000
+ 29206 multiletter control sequences out of 15000+600000
  516841 words of font info for 65 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 89i,6n,97p,440b,348s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,6n,97p,440b,354s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on manuscript.xdv (6 pages, 48232 bytes).
+Output written on manuscript.xdv (14 pages, 81204 bytes).
