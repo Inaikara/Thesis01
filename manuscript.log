@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 23.1) (preloaded format=xelatex 2023.2.22)  27 FEB 2023 11:52
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 23.1) (preloaded format=xelatex 2023.2.22)  2 MAR 2023 10:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -381,20 +381,43 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(manuscript.toc)
+(manuscript.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 2.
+)
 \tf@toc=\write3
 \openout3 = `manuscript.toc'.
 
  [1
 
-] [2] (manuscript.aux) ) 
+]
+File: fig/1-1.jpg Graphic file (type bmp)
+<fig/1-1.jpg>
+ [2]
+File: fig/2-1.jpg Graphic file (type bmp)
+<fig/2-1.jpg>
+ [3]
+File: fig/2-2.jpg Graphic file (type bmp)
+<fig/2-2.jpg>
+File: fig/2-3.jpg Graphic file (type bmp)
+<fig/2-3.jpg>
+ [4]
+File: fig/2-4.jpg Graphic file (type bmp)
+<fig/2-4.jpg>
+File: fig/2-5.jpg Graphic file (type bmp)
+<fig/2-5.jpg>
+ [5] [6] (manuscript.aux) ) 
 Here is how much of TeX's memory you used:
- 8603 strings out of 411511
- 230994 string characters out of 5819115
- 1852001 words of memory out of 5000000
- 28740 multiletter control sequences out of 15000+600000
- 514065 words of font info for 51 fonts, out of 8000000 for 9000
+ 8759 strings out of 411511
+ 236421 string characters out of 5819115
+ 1859001 words of memory out of 5000000
+ 28872 multiletter control sequences out of 15000+600000
+ 516841 words of font info for 65 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 89i,5n,97p,440b,275s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,6n,97p,440b,348s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on manuscript.xdv (2 pages, 7832 bytes).
+Output written on manuscript.xdv (6 pages, 48232 bytes).
